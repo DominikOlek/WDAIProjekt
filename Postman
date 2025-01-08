@@ -1,0 +1,850 @@
+{
+	"info": {
+		"_postman_id": "4491a121-eefe-4920-bc57-7ee41c6c35d6",
+		"name": "Kino",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15821917"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Rejestracja",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Email\": \"dominik2@gmail.com\",\r\n    \"Password\": \"1234567\",\r\n    \"Name\": \"Dominik\",\r\n    \"LastName\": \"Oleksy\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logowanie",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Email\": \"dominik@gmail.com\",\r\n    \"Password\": \"1234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WszyscyPracownicy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJkb21pbmlrQGdtYWlsLmNvbSIsIm5hbWUiOiJEb21pbmlrIiwibGFzdG5hbWUiOiJPbGVrc3kiLCJyb2xlIjoiTWFuYWdlciIsImlhdCI6MTczNjAyNjI2NSwiZXhwIjoxNzM2MDI4MjY1fQ.oNbffkJjNuTES7YsQraDf6_BhIMbDaIo20J8153fdg8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IsConfirm\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ZatwierdzaniePracownika",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ID\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/confirm",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"confirm"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rooms",
+			"item": [
+				{
+					"name": "Dodaj",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJkb21pbmlrQGdtYWlsLmNvbSIsIm5hbWUiOiJEb21pbmlrIiwibGFzdG5hbWUiOiJPbGVrc3kiLCJyb2xlIjoiTWFuYWdlciIsImlhdCI6MTczNjAzNjM5OCwiZXhwIjoxNzM2MDM4Mzk4fQ.KAU_svk6qhcEsjdX7H6N7zud7MnT_6rE2lupNMG9BFw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Number\": 1,\r\n    \"Places\":  [ [0,0,0], [0,0,0], [0,0,0] ],\r\n    \"ScreenSize\": 70,\r\n    \"Is3D\": false,\r\n    \"IsIMAX\": false,\r\n    \"Is4D\": false,\r\n    \"IsScreenX\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/room/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"room",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pobierz po ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJkb21pbmlrQGdtYWlsLmNvbSIsIm5hbWUiOiJEb21pbmlrIiwibGFzdG5hbWUiOiJPbGVrc3kiLCJyb2xlIjoiTWFuYWdlciIsImlhdCI6MTczNjA4MzgyMCwiZXhwIjoxNzM4MDgzODIwfQ.hvUWmTZ3rae2t7EczlwXZkA9upGDAekDKFGpwPTebGQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/room/5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"room",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edytuj",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJkb21pbmlrQGdtYWlsLmNvbSIsIm5hbWUiOiJEb21pbmlrIiwibGFzdG5hbWUiOiJPbGVrc3kiLCJyb2xlIjoiTWFuYWdlciIsImlhdCI6MTczNjA4MzgyMCwiZXhwIjoxNzM4MDgzODIwfQ.hvUWmTZ3rae2t7EczlwXZkA9upGDAekDKFGpwPTebGQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ScreenSize\": 85,\r\n    \"Places\": [\r\n        [\r\n            -1,\r\n            -1,\r\n            0\r\n        ],\r\n        [\r\n            -1,\r\n            0,\r\n            0\r\n        ],\r\n        [\r\n            0,\r\n            0,\r\n            0\r\n        ]\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/room/edit5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"room",
+								"edit5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuń",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJkb21pbmlrQGdtYWlsLmNvbSIsIm5hbWUiOiJEb21pbmlrIiwibGFzdG5hbWUiOiJPbGVrc3kiLCJyb2xlIjoiTWFuYWdlciIsImlhdCI6MTczNjAzNjM5OCwiZXhwIjoxNzM2MDM4Mzk4fQ.KAU_svk6qhcEsjdX7H6N7zud7MnT_6rE2lupNMG9BFw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/room/delete1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"room",
+								"delete1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pobierz wszystkie",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/room/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"room",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movie",
+			"item": [
+				{
+					"name": "Dodaj film z instancjami",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJkb21pbmlrQGdtYWlsLmNvbSIsIm5hbWUiOiJEb21pbmlrIiwibGFzdG5hbWUiOiJPbGVrc3kiLCJyb2xlIjoiTWFuYWdlciIsImlhdCI6MTczNjA4MTc4MSwiZXhwIjoxNzM2MDgzNzgxfQ.go_AXjMlH4EVY35b2kk-Nd_zGfGVGVMZw3BhkrafIhg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Subtitles\": [3,4],\r\n    \"Languages\":  [2,3],\r\n    \"Name\": \"Shrek 2\",\r\n    \"Director\": \"Ja\",\r\n    \"Describe\": \"Fajne dzieło\",\r\n    \"Is3D\": false,\r\n    \"IsIMAX\": false,\r\n    \"Is4D\": false,\r\n    \"IsScreenX\": false,\r\n    \"CategoryID\":3,\r\n    \"AgeCategory\": \"All\",\r\n    \"Length\": 120\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/movie/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movie",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dodaj instancje dla filmu",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJkb21pbmlrQGdtYWlsLmNvbSIsIm5hbWUiOiJEb21pbmlrIiwibGFzdG5hbWUiOiJPbGVrc3kiLCJyb2xlIjoiTWFuYWdlciIsImlhdCI6MTczNjAzODcwNywiZXhwIjoxNzM2MDQwNzA3fQ.bqUMErtMryLZw_j0XOUH62M3iI5v_rRjSQn2U-CQwH0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/movie/add/1/3/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movie",
+								"add",
+								"1",
+								"3",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edytuj dane filmu",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJkb21pbmlrQGdtYWlsLmNvbSIsIm5hbWUiOiJEb21pbmlrIiwibGFzdG5hbWUiOiJPbGVrc3kiLCJyb2xlIjoiTWFuYWdlciIsImlhdCI6MTczNjAzODcwNywiZXhwIjoxNzM2MDQwNzA3fQ.bqUMErtMryLZw_j0XOUH62M3iI5v_rRjSQn2U-CQwH0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Shrek\",\r\n    \"Director\": \"Ja\",\r\n    \"Describe\": \"Fajne dzieło\",\r\n    \"Is3D\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/movie/edit1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movie",
+								"edit1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuń Instancje",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJkb21pbmlrQGdtYWlsLmNvbSIsIm5hbWUiOiJEb21pbmlrIiwibGFzdG5hbWUiOiJPbGVrc3kiLCJyb2xlIjoiTWFuYWdlciIsImlhdCI6MTczNjAzODcwNywiZXhwIjoxNzM2MDQwNzA3fQ.bqUMErtMryLZw_j0XOUH62M3iI5v_rRjSQn2U-CQwH0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/movie/delete1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movie",
+								"delete1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pobierz wszystkie",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJkb21pbmlrQGdtYWlsLmNvbSIsIm5hbWUiOiJEb21pbmlrIiwibGFzdG5hbWUiOiJPbGVrc3kiLCJyb2xlIjoiTWFuYWdlciIsImlhdCI6MTczNjA4MzgyMCwiZXhwIjoxNzM4MDgzODIwfQ.hvUWmTZ3rae2t7EczlwXZkA9upGDAekDKFGpwPTebGQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/movie/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movie",
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pobierz kategorie filmów",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJkb21pbmlrQGdtYWlsLmNvbSIsIm5hbWUiOiJEb21pbmlrIiwibGFzdG5hbWUiOiJPbGVrc3kiLCJyb2xlIjoiTWFuYWdlciIsImlhdCI6MTczNjA4MTc4MSwiZXhwIjoxNzM2MDgzNzgxfQ.go_AXjMlH4EVY35b2kk-Nd_zGfGVGVMZw3BhkrafIhg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/movie/category",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movie",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dodaj kategorie filmu",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJkb21pbmlrQGdtYWlsLmNvbSIsIm5hbWUiOiJEb21pbmlrIiwibGFzdG5hbWUiOiJPbGVrc3kiLCJyb2xlIjoiTWFuYWdlciIsImlhdCI6MTczNjA4MTc4MSwiZXhwIjoxNzM2MDgzNzgxfQ.go_AXjMlH4EVY35b2kk-Nd_zGfGVGVMZw3BhkrafIhg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Komedia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/movie/category",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movie",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pobierz dostępne języki",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/lang/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"lang",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pobierz po ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/movie/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movie",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Seanse (Show)",
+			"item": [
+				{
+					"name": "Dodaj",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJkb21pbmlrQGdtYWlsLmNvbSIsIm5hbWUiOiJEb21pbmlrIiwibGFzdG5hbWUiOiJPbGVrc3kiLCJyb2xlIjoiTWFuYWdlciIsImlhdCI6MTczNjA4MzgyMCwiZXhwIjoxNzM4MDgzODIwfQ.hvUWmTZ3rae2t7EczlwXZkA9upGDAekDKFGpwPTebGQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"MovieID\": 3,\r\n    \"RoomID\": 5,\r\n    \"NormalPrice\": 25,\r\n    \"VIPPrice\":35,\r\n    \"StartTime\": \"2025-03-12T13:50:27+00:00\",\r\n    \"EndTime\": \"2025-03-12T16:00:27+00:00\",\r\n    \"Is3D\": false,\r\n    \"Is4D\":false,\r\n    \"IsIMAX\":false,\r\n    \"IsScreenX\":false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/show/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"show",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edytuj",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJkb21pbmlrQGdtYWlsLmNvbSIsIm5hbWUiOiJEb21pbmlrIiwibGFzdG5hbWUiOiJPbGVrc3kiLCJyb2xlIjoiTWFuYWdlciIsImlhdCI6MTczNjA4MzgyMCwiZXhwIjoxNzM4MDgzODIwfQ.hvUWmTZ3rae2t7EczlwXZkA9upGDAekDKFGpwPTebGQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"MovieID\": 3,\r\n    \"RoomID\": 5,\r\n    \"NormalPrize\": 20,\r\n    \"VIPPrize\":35,\r\n    \"StartTime\": \"2025-03-12T13:50:27+00:00\",\r\n    \"EndTime\": \"2025-03-12T16:00:27+00:00\",\r\n    \"Is3D\": false,\r\n    \"Is4D\":false,\r\n    \"IsIMAX\":false,\r\n    \"IsScreenX\":false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/show/edit2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"show",
+								"edit2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pobierz nowsze lub po dacie",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJkb21pbmlrQGdtYWlsLmNvbSIsIm5hbWUiOiJEb21pbmlrIiwibGFzdG5hbWUiOiJPbGVrc3kiLCJyb2xlIjoiTWFuYWdlciIsImlhdCI6MTczNjA4MzgyMCwiZXhwIjoxNzM4MDgzODIwfQ.hvUWmTZ3rae2t7EczlwXZkA9upGDAekDKFGpwPTebGQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Date\": \"2025-03-12T13:50:27+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/show/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"show",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuń (tylko gdy nikt nie zamówił)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJkb21pbmlrQGdtYWlsLmNvbSIsIm5hbWUiOiJEb21pbmlrIiwibGFzdG5hbWUiOiJPbGVrc3kiLCJyb2xlIjoiTWFuYWdlciIsImlhdCI6MTczNjA4MzgyMCwiZXhwIjoxNzM4MDgzODIwfQ.hvUWmTZ3rae2t7EczlwXZkA9upGDAekDKFGpwPTebGQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/show/delete1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"show",
+								"delete1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pobierz po ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/show/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"show",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Zamówienia (Order)",
+			"item": [
+				{
+					"name": "Dodaj (jako klient anonim)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Dawid\",\r\n    \"LastName\": \"Kowalski\",\r\n    \"Email\": \"dd@wp.pl\",\r\n    \"Places\": [[0,1,1]],\r\n    \"ShowID\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/order/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"order",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sprawdź czy jest zamówienie (Pracownik)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJkb21pbmlrQGdtYWlsLmNvbSIsIm5hbWUiOiJEb21pbmlrIiwibGFzdG5hbWUiOiJPbGVrc3kiLCJyb2xlIjoiTWFuYWdlciIsImlhdCI6MTczNjA4MzgyMCwiZXhwIjoxNzM4MDgzODIwfQ.hvUWmTZ3rae2t7EczlwXZkA9upGDAekDKFGpwPTebGQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/order/check/3/dd@wp.pl",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"order",
+								"check",
+								"3",
+								"dd@wp.pl"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
