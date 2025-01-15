@@ -145,6 +145,99 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Ustaw Role",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ID\":1,\r\n    \"Role\": \"Manager\"  //\"Employee\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/role",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJkb21pbmlrMkBnbWFpbC5jb20iLCJuYW1lIjoiRG9taW5payIsImxhc3RuYW1lIjoiT2xla3N5Iiwicm9sZSI6IkVtcGxveWVlIiwiaWF0IjoxNzM2OTQxNDk0LCJleHAiOjE3MzcwMzE0OTR9.K2FK5s1OVZDKmma8ZyvtqHyKkRQfzZSWhIK5vLu0JPk\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/refresh",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LogOut",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Baerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJkb21pbmlrMkBnbWFpbC5jb20iLCJuYW1lIjoiRG9taW5payIsImxhc3RuYW1lIjoiT2xla3N5Iiwicm9sZSI6IkVtcGxveWVlIiwiaWF0IjoxNzM2OTQxNzcyLCJleHAiOjE3MzY5NDI3NzJ9.HMBJEPwkfiPQX6eJZe6ntm_s4-iCKhi_maIzNmiO7tY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},

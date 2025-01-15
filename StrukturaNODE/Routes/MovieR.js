@@ -17,9 +17,9 @@ router.get('/category', Auth.authenticate, asyncHandler(Cntrl.getAllCategory));
 
 router.post('/category', Auth.authenticate, asyncHandler(Cntrl.AddCategory));
 
-router.get('/:id', Auth.authenticate, asyncHandler(Cntrl.getOne));
+router.get('/:id', asyncHandler(Cntrl.getOne));
 
-router.get('/', Auth.authenticate, asyncHandler(Cntrl.getAll));
+router.get('/', asyncHandler(Cntrl.getAll));
 
 
 

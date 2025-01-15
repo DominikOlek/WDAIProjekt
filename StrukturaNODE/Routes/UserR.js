@@ -10,6 +10,10 @@ router.post('/register', asyncHandler(Cntrl.register));
 
 router.post('/login', asyncHandler(Cntrl.login));
 
+router.post('/refresh', Auth.authenticate, asyncHandler(Cntrl.refresh));
+
+router.post('/logout', Auth.authenticate, asyncHandler(Cntrl.logout));
+
 router.post('/confirm', Auth.authenticateManager, asyncHandler(Cntrl.confirm));
 
 router.post('/role', Auth.authenticateManager, asyncHandler(Cntrl.setRole));

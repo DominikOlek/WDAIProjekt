@@ -11,9 +11,9 @@ router.patch('/edit:id', Auth.authenticate, asyncHandler(Cntrl.edit));
 
 router.delete('/delete:id', Auth.authenticate, asyncHandler(Cntrl.delOne)); 
 
-router.get('/:id', Auth.authenticate, asyncHandler(Cntrl.getOne));
+router.get('/:id', asyncHandler(Cntrl.getOne));
 
-router.post('/', Auth.authenticate, asyncHandler(Cntrl.getAll));
+router.post('/', asyncHandler(Cntrl.getAll));
 
 
 module.exports = router;

@@ -42,7 +42,7 @@ const getAll = async (req, res) => {
             await AddInfo(movies);
         }
 
-        res.status(200).json(movies);
+        return res.status(200).json(movies);
     } catch (error) {
         try { res.status(500).send(); console.log("Error " + error); } catch { }
     }
@@ -52,7 +52,7 @@ const getAllCategory = async (req, res) => {
     try {
         let categories = await Category.findAll();
 
-        res.status(200).json(categories);
+        return res.status(200).json(categories);
     } catch (error) {
         try { res.status(500).send(); console.log("Error " + error); } catch { }
     }
@@ -67,7 +67,7 @@ const AddCategory = async (req, res) => {
         }
 
         await Category.create({ 'Name': obj.Name });
-        res.status(201).json("OK");
+        return res.status(201).json("OK");
     } catch (error) {
         try { res.status(500).send(); console.log("Error " + error); } catch { }
     }
@@ -77,11 +77,10 @@ const getOne = async (req, res) => {
     try {
         let movie = await Movie.findOne({ where: { ID: req.params['id'] } });
         if (!movie) {
-            res.status(404).json("No movie with this ID");
-            return;
+            return res.status(404).json("No movie with this ID");
         }
         await AddInfoOne(movie);
-        res.status(200).json(movie);
+        return res.status(200).json(movie);
     } catch (error) {
         try { res.status(500).send(); console.log("Error " + error); } catch { }
     }
@@ -91,25 +90,20 @@ const addOne = async (req, res) => {
     try {
         const obj = req.body;
         if (!obj.hasOwnProperty("Name") || !obj.hasOwnProperty("Describe") || !obj.hasOwnProperty("Languages") || !obj.hasOwnProperty("Subtitles") || !obj.hasOwnProperty("Director") || !obj.hasOwnProperty("CategoryID") || !obj.hasOwnProperty("AgeCategory") || !obj.hasOwnProperty("Length")) {
-            res.status(400).send("Missing data");
-            return;
+            return res.status(400).send("Missing data");
         }
         if (obj.Length <= 0) {
-            res.status(400).send("Wrong length");
-            return;
+            return res.status(400).send("Wrong length");
         }
         if (!isArray(obj.Languages) || !isArray(obj.Subtitles) || obj.Languages.length != obj.Subtitles.length) {
-            res.status(400).send("Wrong Language/Subtitles data");
-            return;
+            return res.status(400).send("Wrong Language/Subtitles data");
         }
         if (obj.AgeCategory != "All" && obj.AgeCategory != "Child" && obj.AgeCategory != "Teen" && obj.AgeCategory != "Adult") {
-            res.status(400).send("Wrong AgeCategory data");
-            return;
+            return res.status(400).send("Wrong AgeCategory data");
         }
         let category = await Category.findOne({ where: { ID: obj.CategoryID } });
         if (!category) {
-            res.status(404).json("No Category with this ID");
-            return;
+            return res.status(404).json("No Category with this ID");
         }
         if (!obj.hasOwnProperty("Is3D")) obj.Is3D = false;
         if (!obj.hasOwnProperty("Is4D")) obj.Is4D = false;
@@ -118,8 +112,7 @@ const addOne = async (req, res) => {
 
         let movieInfo = await MovieInfo.create(obj);
         if (!movieInfo) {
-            res.status(500).json("Database error");
-            return;
+            return res.status(500).json("Database error");
         }
 
         for (let i = 0; i < obj.Languages.length; i++) {
@@ -131,7 +124,7 @@ const addOne = async (req, res) => {
             await Movie.create({ 'MovieID': movieInfo.ID, 'LanguageID': obj.Languages[i], 'SubtitlesID': obj.Subtitles[i] });
         }
 
-        res.status(201).send("OK");
+        return res.status(201).send("OK");
     } catch (error) {
         try { res.status(500).send(); console.log("Error " + error); } catch { }
     }
@@ -144,11 +137,11 @@ const addOneVersion = async (req, res) => {
         let lan = await Language.findOne({ where: { ID: req.params['idL'] } });
         let sub = await Language.findOne({ where: { ID: req.params['idS'] } });
         if (!movie || !lan || !sub) {
-            res.status(404).json("No element");
+            return res.status(404).json("No element");
         }
 
         await Movie.create({ 'MovieID': req.params['id'], 'LanguageID': req.params['idL'], 'SubtitlesID': req.params['idS'] });
-        res.status(205).send("OK");
+        return res.status(205).send("OK");
     } catch (error) {
         try { res.status(500).send(); console.log("Error " + error); } catch { }
     }
@@ -163,13 +156,13 @@ const delOne = async (req, res) => {
         let movie = await Movie.findOne({ where: { ID: req.params['id'] } });
         let show = await Show.findOne({ where: { MovieID: req.params['id'] } });
         if (show) {
-            res.status(405).json("First cancel all show with this movie");
+            return res.status(405).json("First cancel all show with this movie");
         }
         if (!movie) {
-            res.status(404).json("No element");
+            return res.status(404).json("No element");
         }
         await movie.destroy();
-        res.status(204).send("OK");
+        return res.status(204).send("OK");
     } catch (error) {
         try { res.status(500).send(); console.log("Error " + error); } catch { }
     }
@@ -180,22 +173,21 @@ const editInfo = async (req, res) => {
         const obj = req.body;
         let movieInfo = await MovieInfo.findOne({ where: { ID: req.params['id'] } });
         if (!movieInfo) {
-            res.status(404).json("No element");
+            return res.status(404).json("No element");
         }
 
         if (obj.hasOwnProperty("AgeCategory") && obj.AgeCategory != "All" && obj.AgeCategory != "Child" && obj.AgeCategory != "Teen" && obj.AgeCategory != "Adult") {
-            res.status(400).send("Wrong AgeCategory data");
+            return res.status(400).send("Wrong AgeCategory data");
         }
         if (obj.hasOwnProperty("CategoryID")) {
             let category = await Category.findOne({ where: { ID: obj.CategoryID } });
             if (!category) {
-                res.status(404).json("No Category with this ID");
-                return;
+                return res.status(404).json("No Category with this ID");
             }
         }
 
         await MovieInfo.update(obj, { where: { ID: req.params['id'] } });
-        res.status(205).send("OK");
+        return res.status(205).send("OK");
     } catch (error) {
         try { res.status(500).send(); console.log("Error " + error); } catch { }
     }

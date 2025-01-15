@@ -5,6 +5,7 @@ const dotenv = require('dotenv');
 const app = express()
 app.use(express.json());
 dotenv.config();
+const cors = require('cors');
 const UserR = require('./Routes/UserR.js');
 const RoomR = require('./Routes/RoomR.js');
 const MovieR = require('./Routes/MovieR.js');
@@ -18,6 +19,7 @@ const server = app.listen(5000, () => {
     console.log(`App start na porcie 5000`)
 })
 
+app.use(cors());
 baza.connect();
 
 //          EXIT

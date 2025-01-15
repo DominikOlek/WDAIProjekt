@@ -30,13 +30,9 @@ const User = {
         type: Sequelize.DataTypes.ENUM('Employee','Manager'),
         allowNull: false,
     },
-    /*Refresh: {
+    Refresh: {
         type: Sequelize.DataTypes.TEXT,
-        allowNull: false,
-    },
-    Expire: {
-        type: Sequelize.DataTypes.DATE,
-        allowNull: false,
-    }*/
+        allowNull: true,
+    }
 };
 module.exports = User;

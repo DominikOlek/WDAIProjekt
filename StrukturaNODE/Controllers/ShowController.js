@@ -104,11 +104,10 @@ const getOne = async (req, res) => {
     try {
         let show = await Show.findOne({ where: { ID: req.params['id'] } });
         if (!show) {
-            res.status(404).json("No show with this ID");
-            return;
+            return res.status(404).json("No show with this ID");
         }
         await AddInfoOne(show);
-        res.status(200).json(show);
+        return res.status(200).json(show);
     } catch (error) {
         try { res.status(500).send(); console.log("Error " + error); } catch { }
     }
@@ -118,24 +117,20 @@ const addOne = async (req, res) => {
     try {
         const obj = req.body;
         if (!obj.hasOwnProperty("MovieID") || !obj.hasOwnProperty("RoomID") || !obj.hasOwnProperty("NormalPrice") || !obj.hasOwnProperty("VIPPrice") || !obj.hasOwnProperty("StartTime") || !obj.hasOwnProperty("EndTime")) {
-            res.status(400).send("Missing data");
-            return;
+            return res.status(400).send("Missing data");
         }
 
         let movie = await Movie.findOne({ where: { ID: obj.MovieID } });
         if (!movie) {
-            res.status(404).json("No movie with this ID");
-            return;
+            return res.status(404).json("No movie with this ID");
         }
         movie = await MovieInfo.findOne({ where: { ID: movie.MovieID } });
         if (!movie) {
-            res.status(404).json("Error with movie");
-            return;
+            return res.status(404).json("Error with movie");
         }
         let room = await Room.findOne({ where: { Number: obj.RoomID } });
         if (!room) {
-            res.status(404).json("No room with this ID");
-            return;
+            return res.status(404).json("No room with this ID");
         }
         const start = new Date(obj.StartTime);
         const end = new Date(obj.EndTime);
@@ -150,8 +145,7 @@ const addOne = async (req, res) => {
         
         for (const e of allInRoom) {
             if (new Date(e.StartTime) < start && new Date(e.EndTime) > start || new Date(e.StartTime) < end && new Date(e.EndTime) > end) {
-                res.status(406).json("Other show is in this room at this time");
-                return;
+                return res.status(406).json("Other show is in this room at this time");
             }
         }
 
@@ -161,32 +155,27 @@ const addOne = async (req, res) => {
         if (!obj.hasOwnProperty("IsScreenX")) obj.IsScreenX = false;
 
         if (obj.Is3D && (!movie.Is3D || !room.Is3D)) {
-            res.status(406).json("This movie or room is not 3D");
-            return;
+            return res.status(406).json("This movie or room is not 3D");
         }
         if (obj.Is4D && (!movie.Is4D || !room.Is4D)) {
-            res.status(406).json("This movie or room is not 4D");
-            return;
+            return res.status(406).json("This movie or room is not 4D");
         }
         if (obj.IsIMAX && (!movie.IsIMAX || !room.IsIMAX)) {
-            res.status(406).json("This movie or room is not IMAX");
-            return;
+            return res.status(406).json("This movie or room is not IMAX");
         }
         if (obj.IsScreenX && (!movie.IsScreenX || !room.IsScreenX)) {
-            res.status(406).json("This movie or room is not ScreenX");
-            return;
+            return res.status(406).json("This movie or room is not ScreenX");
         }
 
         
         start.setMinutes(start.getMinutes() + movie.Length);
         if (start>end) {
-            res.status(406).json("Wrong Times");
-            return;
+            return res.status(406).json("Wrong Times");
         }
         obj.Places = JSON.parse(JSON.stringify(room.Places));
 
         await Show.create(obj);
-        res.status(201).send("OK");
+        return res.status(201).send("OK");
     } catch (error) {
         try { res.status(500).send(); console.log("Error " + error); } catch { }
     }
@@ -217,19 +206,17 @@ const edit = async (req, res) => {
         const obj = req.body;
         let show = await Show.findOne({ where: { ID: req.params['id'] } });
         if (!show) {
-            res.status(404).json("No element");
+            return res.status(404).json("No element");
         }
 
         let movie = await Movie.findOne({ where: { ID: show.MovieID } });
         if (obj.hasOwnProperty("MovieID")) {
             movie = await Movie.findOne({ where: { ID: obj.MovieID } });
             if (!movie) {
-                res.status(404).json("No movie with this ID");
-                return;
+                return res.status(404).json("No movie with this ID");
             }
             if (show.StartTime + (movie.Length * 60) > show.EndTime) {
-                res.status(406).json("Wrong Times");
-                return;
+                return res.status(406).json("Wrong Times");
             }
         }
         let start = new Date(show.StartTime);
@@ -237,8 +224,7 @@ const edit = async (req, res) => {
         if (obj.hasOwnProperty("RoomID")) {
             let room = await Room.findOne({ where: { Number: obj.RoomID } });
             if (!room) {
-                res.status(404).json("No room with this ID");
-                return;
+                return res.status(404).json("No room with this ID");
             }
             let allInRoom = await Show.findAll({
                 where: {
@@ -250,27 +236,22 @@ const edit = async (req, res) => {
             });
             for (const e of allInRoom) {
                 if (new Date(e.StartTime) < start && new Date(e.EndTime) > start || new Date(e.StartTime) < end && new Date(e.EndTime) > end) {
-                    res.status(406).json("Other show is in this room at this time");
-                    return;
+                    return res.status(406).json("Other show is in this room at this time");
                 }
             }
         }
         movie = await MovieInfo.findOne({ where: { ID: movie.MovieID } });
         if (obj.hasOwnProperty("Is3D")&& obj.Is3D && (!movie.Is3D || !room.Is3D)) {
-            res.status(406).json("This movie or room is not 3D");
-            return;
+            return res.status(406).json("This movie or room is not 3D");
         }
         if (obj.hasOwnProperty("Is4D") && obj.Is4D && (!movie.Is4D || !room.Is4D)) {
-            res.status(406).json("This movie or room is not 4D");
-            return;
+            return res.status(406).json("This movie or room is not 4D");
         }
         if (obj.hasOwnProperty("IsIMAX") && obj.IsIMAX && (!movie.IsIMAX || !room.IsIMAX)) {
-            res.status(406).json("This movie or room is not IMAX");
-            return;
+            return res.status(406).json("This movie or room is not IMAX");
         }
         if (obj.hasOwnProperty("IsScreenX") && obj.IsScreenX && (!movie.IsScreenX || !room.IsScreenX)) {
-            res.status(406).json("This movie or room is not ScreenX");
-            return;
+            return res.status(406).json("This movie or room is not ScreenX");
         }
 
         let StartA;
@@ -281,8 +262,7 @@ const edit = async (req, res) => {
             end = new Date(obj.EndTime);
             start.setMinutes(start.getMinutes() + movie.Length);
             if (start > end) {
-                res.status(406).json("Wrong Times");
-                return;
+                return res.status(406).json("Wrong Times");
             }
             StartA = obj.StartTime;
             EndA = obj.EndTime;
@@ -291,8 +271,7 @@ const edit = async (req, res) => {
             end = new Date(show.EndTime);
             start.setMinutes(start.getMinutes() + movie.Length);
             if (start > end) {
-                res.status(406).json("Wrong Times");
-                return;
+                return res.status(406).json("Wrong Times");
             }
             StartA = obj.StartTime;
             EndA = show.EndTime;
@@ -301,8 +280,7 @@ const edit = async (req, res) => {
             end = new Date(obj.EndTime);
             start.setMinutes(start.getMinutes() + movie.Length);
             if (start > end) {
-                res.status(406).json("Wrong Times");
-                return;
+                return res.status(406).json("Wrong Times");
             }
             StartA = show.StartTime;
             EndA = obj.EndTime;
@@ -322,14 +300,13 @@ const edit = async (req, res) => {
             EndA = new Date(EndA);
             for (const e of allInRoom) {
                 if (new Date(e.StartTime) < StartA && new Date(e.EndTime) > StartA || new Date(e.StartTime) < EndA && new Date(e.EndTime) > EndA) {
-                    res.status(406).json("Other show is in this room at this time");
-                    return;
+                    return res.status(406).json("Other show is in this room at this time");
                 }
             }
         }
         
         await Show.update(obj, { where: { ID: req.params['id'] } });
-        res.status(205).send("OK");
+        return res.status(205).send("OK");
     } catch (error) {
         try { res.status(500).send(); console.log("Error " + error); } catch { }
     }
