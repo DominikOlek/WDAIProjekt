@@ -3,7 +3,6 @@ import React, { useEffect } from "react";
 import Seat from "./Seat";
 import "./style.css";
 import { Reserved, Screening } from "../interfaces";
-import Login from "../login/Login";
 import { useSearchParams } from "next/navigation";
 import { getScreeningByID, placeOrder } from "../login/methods";
 
@@ -88,9 +87,11 @@ export default function Page() {
 
   return (
     <div>
-      <Login></Login>
       {movieData == undefined ? "" : generateSeats(movieData.seats.length)}
+      <div></div>
       <form onSubmit={send}>
+        <label>Złóż zamówienie</label>
+        <br></br>
         <input name="firstName" type="text" placeholder="firstName" />
         <input name="lastName" type="text" placeholder="lastName" />
         <input name="email" type="text" placeholder="email" />
