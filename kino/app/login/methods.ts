@@ -1,4 +1,4 @@
-import { ip, Reserved, Screening } from "../interfaces";
+import { ip, Reserved, Screening, Seat } from "../interfaces";
 
 export function getCookie(name: string) {
   const value = `; ${document.cookie}`;
@@ -112,5 +112,12 @@ let getScreeningByID = async (id: number): Promise<Screening> => {
     return sc;
   });
 };
+let placeOrder = async (
+  firstName: string,
+  lastName: string,
+  email: string,
+  seats: Seat[],
+  ScreeningId: number
+) => {};
 export { getAllScreenings };
 export { getScreeningByID };

@@ -37,9 +37,6 @@ export default function Page() {
 
     console.log(reserved);
   }
-  function send() {
-    console.log(reserved);
-  }
 
   function generateRow(n: number, a: number) {
     let tab = [];
@@ -65,11 +62,28 @@ export default function Page() {
     tab.push(<br></br>);
     return tab;
   }
+
+  function send(e: any) {
+    e.preventDefault();
+    console.log(e);
+    console.log(reserved);
+    console.log(movieData);
+    let a = [];
+    for (let i = 0; i < reserved.length; i++) {
+      a.push([reserved[i].x, reserved[i].y]);
+    }
+  }
+
   return (
     <div>
       <Login></Login>
       {movieData == undefined ? "" : generateSeats(movieData.seats.length)}
-      <button onClick={send}>reserve</button>
+      <form onSubmit={send}>
+        <input name="firstName" type="text" placeholder="firstName" />
+        <input name="lastName" type="text" placeholder="lastName" />
+        <input name="email" type="text" placeholder="email" />
+        <input type="submit" value="submit"></input>
+      </form>
     </div>
   );
 }
