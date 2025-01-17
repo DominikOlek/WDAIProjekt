@@ -5,7 +5,7 @@ import "./style.css";
 import { Reserved, Screening } from "../interfaces";
 import Login from "../login/Login";
 import { useSearchParams } from "next/navigation";
-import { getScreeningByID } from "../login/methods";
+import { getScreeningByID, placeOrder } from "../login/methods";
 
 export default function Page() {
   const searchParams = useSearchParams();
@@ -69,9 +69,21 @@ export default function Page() {
     console.log(reserved);
     console.log(movieData);
     let a = [];
-    for (let i = 0; i < reserved.length; i++) {
-      a.push([reserved[i].x, reserved[i].y]);
+    console.log(a);
+    if (movieData != undefined) {
+      placeOrder(
+        e.target.firstName.value,
+        e.target.lastName.value,
+        e.target.email.value,
+        movieData?.id,
+        reserved
+      );
     }
+    // "Name":"a",
+    // "LastName":"b",
+    // "Email":"A@gmail.com",
+    // "ShowID":1,
+    // "Places":[[0,2,1]]
   }
 
   return (

@@ -1,4 +1,4 @@
-import { ip, Reserved, Screening, Seat } from "../interfaces";
+import { ip, Reserved, Screening } from "../interfaces";
 
 export function getCookie(name: string) {
   const value = `; ${document.cookie}`;
@@ -116,8 +116,33 @@ let placeOrder = async (
   firstName: string,
   lastName: string,
   email: string,
-  seats: Seat[],
-  ScreeningId: number
-) => {};
-export { getAllScreenings };
-export { getScreeningByID };
+  ScreeningId: number,
+  seats: any
+) => {
+  let x = fetch(`http://${ip}:5000/show`, {
+    method: "POST",
+    mode: "cors",
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      Name: firstName,
+      Lastname: lastName,
+      Email: email,
+      ScreeningID: ScreeningId,
+      Places: seats,
+    }),
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .catch((error) => {
+      console.error("Error fetching data:", error);
+    });
+};
+export { getAllScreenings, placeOrder, getScreeningByID };

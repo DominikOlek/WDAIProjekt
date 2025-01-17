@@ -26,11 +26,12 @@ const addOne = async (req, res) => {
     obj.IsVIP = false;
     obj.Price = 0;
     for (const e of obj.Places) {
+      console.log(e);
       if (show.Places.length < e[0] || show.Places[e[0]].length < e[1]) {
         return res.status(406).send("Wrong Places data1");
       }
       if (show.Places[e[0]][e[1]] != 0) {
-        return res.status(406).send("Wrong Places data2");
+        return res.status(406).send("Places already taken");
       }
       if (show.Places[e[0]][e[1]] < 0) {
         return res.status(406).send("Wrong Places data3");
