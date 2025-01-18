@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\adminPanel",
+    "\\app\\adminPanel\\movies",
+    "\\app\\adminPanel\\rooms",
+    "\\app\\adminPanel\\screenings",
+    "\\app\\adminPanel\\users",
+    "\\app\\login",
+    "\\app\\moviesList",
+    "\\app\\reservation"
+  ],
+  "SelectedNode": "\\app\\reservation\\page.tsx",
+  "PreviewInSolutionExplorer": false
+}

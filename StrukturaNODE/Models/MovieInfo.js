@@ -29,6 +29,10 @@ const MovieInfo = {
         type: Sequelize.DataTypes.INTEGER,
         allowNull: false,
     },
+    ImageSrc: {
+        type: Sequelize.DataTypes.STRING,
+        allowNull: false,
+    },
     Is3D: {
         type: Sequelize.DataTypes.BOOLEAN,
         allowNull: false,

@@ -21,5 +21,10 @@ export interface Reserved {
   y: number;
   selected: boolean;
 }
-let ip = "192.168.1.103";
+
+export interface Position {
+    x: number;
+    y: number;
+}
+let ip = "192.168.0.5";
 export { ip };

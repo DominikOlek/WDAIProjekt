@@ -32,6 +32,7 @@ const AddInfoOne = async (e) => {
     e.dataValues.Describe = info.dataValues.Describe;
     e.dataValues.Director = info.dataValues.Director;
     e.dataValues.AgeCategory = info.dataValues.AgeCategory;
+    e.dataValues.ImageSrc = info.dataValues.ImageSrc;
 
     let cat = await Category.findOne({ where: { ID: info.dataValues.CategoryID } });
     e.dataValues.Category = cat.dataValues.Name;
@@ -44,36 +45,6 @@ const getAll = async (req, res) => {
     try {
         const obj = req.body;
         let show;
-        /*if (obj.hasOwnProperty("Title") && obj.hasOwnProperty("Date")) {
-            show = await Show.findAll({
-                where: {
-                    Title: { [Op.like]: `% ${obj.Title}%` }, [Op.and]: [Sequelize.where(fn('date', col('StartTime')), '=', obj.StartTime.split('T')[0])]
-                },
-                order: [["StartTime", "ASC"]],
-            });
-        } else if (obj.hasOwnProperty("Title")) {
-            show = await Show.findAll({
-                where: {
-                    Title: { [Op.like]: '%'+obj.Title+'%', },
-                },
-                order: [["StartTime", "ASC"]],
-            });
-        } else if (obj.hasOwnProperty("Date")) {
-            show = await Show.findAll({
-                where: {
-                    [Op.and]: [Sequelize.where(fn('date', col('StartTime')), '=', obj.StartTime.split('T')[0])]
-                },
-                order: [["StartTime", "ASC"]],
-            });
-        } else {
-            const currentDate = new Date();
-            show = await Show.findAll({
-                where: {
-                    StartTime: {[Op.gt]: currentDate}
-                },
-                order: [["StartTime", "ASC"]],
-            });
-        }*/
         if (obj.hasOwnProperty("Date")) {
             show = await Show.findAll({
                 where: {

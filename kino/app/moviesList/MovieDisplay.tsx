@@ -11,7 +11,7 @@ export default function movieDisplay(props: { screening: Screening }) {
     <div>
       <div onClick={handleNavigate}>
         <img
-          src={props.screening.movie.img}
+          src={"/img/" +props.screening.movie.img}
           alt="https://images.template.net/wp-content/uploads/2017/02/17221912/Printable-Blank-Movie-Poster.jpg"
         />
         <h1>{props.screening.movie.title}</h1>

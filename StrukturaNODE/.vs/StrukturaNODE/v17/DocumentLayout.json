@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "D:\\WDAI\\Projekt2\\StrukturaNODE\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\OrderController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\OrderController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\ShowController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\ShowController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\LanguageController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\LanguageController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\MovieController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\MovieController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\StrukturaNODE\\Models\\MovieInfo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\MovieInfo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\StrukturaNODE\\Routes\\ShowR.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Routes\\ShowR.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
@@ -31,24 +51,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\DataBaseC.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\LanguageController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\LanguageController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\MovieController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\MovieController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\OrderController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\OrderController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\RoomController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\RoomController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\ShowController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\ShowController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\StrukturaNODE\\Lab.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -66,8 +70,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 34,
+          "SelectedChildIndex": 44,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{f37f5141-198e-4181-9582-7b026ee8f915}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:30:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
@@ -206,46 +214,133 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "MovieInfo.js",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Models\\MovieInfo.js",
+              "RelativeDocumentMoniker": "Models\\MovieInfo.js",
+              "ToolTip": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Models\\MovieInfo.js",
+              "RelativeToolTip": "Models\\MovieInfo.js",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-17T23:27:22.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ShowR.js",
               "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Routes\\ShowR.js",
               "RelativeDocumentMoniker": "Routes\\ShowR.js",
               "ToolTip": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Routes\\ShowR.js",
               "RelativeToolTip": "Routes\\ShowR.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-01-15T11:57:25.311Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MovieR.js",
-              "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Routes\\MovieR.js",
-              "RelativeDocumentMoniker": "Routes\\MovieR.js",
-              "ToolTip": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Routes\\MovieR.js",
-              "RelativeToolTip": "Routes\\MovieR.js",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-15T11:57:07.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Movie.js",
-              "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Models\\Movie.js",
-              "RelativeDocumentMoniker": "Models\\Movie.js",
-              "ToolTip": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Models\\Movie.js",
-              "RelativeToolTip": "Models\\Movie.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "LanguageController.js",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\LanguageController.js",
+              "RelativeDocumentMoniker": "Controllers\\LanguageController.js",
+              "ToolTip": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\LanguageController.js",
+              "RelativeToolTip": "Controllers\\LanguageController.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-15T11:57:03.529Z",
+              "WhenOpened": "2025-01-15T11:41:32.905Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "MovieController.js",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\MovieController.js",
+              "RelativeDocumentMoniker": "Controllers\\MovieController.js",
+              "ToolTip": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\MovieController.js",
+              "RelativeToolTip": "Controllers\\MovieController.js",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAADUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-15T11:40:18.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RoomController.js",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\RoomController.js",
+              "RelativeDocumentMoniker": "Controllers\\RoomController.js",
+              "ToolTip": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\RoomController.js",
+              "RelativeToolTip": "Controllers\\RoomController.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-15T11:38:46.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserController.js",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\UserController.js",
+              "RelativeDocumentMoniker": "Controllers\\UserController.js",
+              "ToolTip": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\UserController.js",
+              "RelativeToolTip": "Controllers\\UserController.js",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAAAFcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-15T11:11:08.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Authorize.js",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Authorize.js",
+              "RelativeDocumentMoniker": "Authorize.js",
+              "ToolTip": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Authorize.js",
+              "RelativeToolTip": "Authorize.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-15T11:23:52.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ShowController.js",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\ShowController.js",
+              "RelativeDocumentMoniker": "Controllers\\ShowController.js",
+              "ToolTip": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\ShowController.js",
+              "RelativeToolTip": "Controllers\\ShowController.js",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAACIAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-15T11:36:49.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserR.js",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Routes\\UserR.js",
+              "RelativeDocumentMoniker": "Routes\\UserR.js",
+              "ToolTip": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Routes\\UserR.js",
+              "RelativeToolTip": "Routes\\UserR.js",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-15T11:34:29.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderController.js",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\OrderController.js",
+              "RelativeDocumentMoniker": "Controllers\\OrderController.js",
+              "ToolTip": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\OrderController.js",
+              "RelativeToolTip": "Controllers\\OrderController.js",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAADcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-15T11:39:45.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "DataBaseC.js",
               "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\DataBaseC.js",
               "RelativeDocumentMoniker": "Controllers\\DataBaseC.js",
@@ -258,103 +353,30 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "LanguageController.js",
-              "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\LanguageController.js",
-              "RelativeDocumentMoniker": "Controllers\\LanguageController.js",
-              "ToolTip": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\LanguageController.js",
-              "RelativeToolTip": "Controllers\\LanguageController.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Title": "Movie.js",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Models\\Movie.js",
+              "RelativeDocumentMoniker": "Models\\Movie.js",
+              "ToolTip": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Models\\Movie.js",
+              "RelativeToolTip": "Models\\Movie.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-15T11:41:32.905Z"
+              "WhenOpened": "2025-01-15T11:57:03.529Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MovieController.js",
-              "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\MovieController.js",
-              "RelativeDocumentMoniker": "Controllers\\MovieController.js",
-              "ToolTip": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\MovieController.js",
-              "RelativeToolTip": "Controllers\\MovieController.js",
-              "ViewState": "AgIAALoAAAAAAAAAAAAAAL4AAAAVAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "MovieR.js",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Routes\\MovieR.js",
+              "RelativeDocumentMoniker": "Routes\\MovieR.js",
+              "ToolTip": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Routes\\MovieR.js",
+              "RelativeToolTip": "Routes\\MovieR.js",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-15T11:40:18.87Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "OrderController.js",
-              "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\OrderController.js",
-              "RelativeDocumentMoniker": "Controllers\\OrderController.js",
-              "ToolTip": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\OrderController.js",
-              "RelativeToolTip": "Controllers\\OrderController.js",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAD0AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-15T11:39:45.625Z"
+              "WhenOpened": "2025-01-15T11:57:07.727Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "RoomController.js",
-              "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\RoomController.js",
-              "RelativeDocumentMoniker": "Controllers\\RoomController.js",
-              "ToolTip": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\RoomController.js",
-              "RelativeToolTip": "Controllers\\RoomController.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-15T11:38:46.339Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserController.js",
-              "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\UserController.js",
-              "RelativeDocumentMoniker": "Controllers\\UserController.js",
-              "ToolTip": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\UserController.js",
-              "RelativeToolTip": "Controllers\\UserController.js",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAAAFcAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-15T11:11:08.453Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Authorize.js",
-              "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Authorize.js",
-              "RelativeDocumentMoniker": "Authorize.js",
-              "ToolTip": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Authorize.js",
-              "RelativeToolTip": "Authorize.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-15T11:23:52.378Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ShowController.js",
-              "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\ShowController.js",
-              "RelativeDocumentMoniker": "Controllers\\ShowController.js",
-              "ToolTip": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Controllers\\ShowController.js",
-              "RelativeToolTip": "Controllers\\ShowController.js",
-              "ViewState": "AgIAAC8BAAAAAAAAAAAAADkBAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-15T11:36:49.524Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UserR.js",
-              "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Routes\\UserR.js",
-              "RelativeDocumentMoniker": "Routes\\UserR.js",
-              "ToolTip": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Routes\\UserR.js",
-              "RelativeToolTip": "Routes\\UserR.js",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-15T11:34:29.866Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "User.js",
               "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Models\\User.js",
               "RelativeDocumentMoniker": "Models\\User.js",
@@ -366,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Lab.js",
               "DocumentMoniker": "D:\\WDAI\\Projekt2\\StrukturaNODE\\Lab.js",
               "RelativeDocumentMoniker": "Lab.js",
@@ -375,10 +397,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-01-15T10:41:17.258Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{f37f5141-198e-4181-9582-7b026ee8f915}"
             }
           ]
         }

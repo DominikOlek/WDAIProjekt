@@ -8,11 +8,11 @@ import { getScreeningByID, placeOrder } from "../login/methods";
 
 export default function Page() {
   const searchParams = useSearchParams();
-  const screening = searchParams.get("title");
+  const screening = searchParams.get("title") | 0;
   const [reserved, reserveSeat] = React.useState<Reserved[]>([]);
   const [movieData, updateData] = React.useState<Screening>();
   useEffect(() => {
-    getScreeningByID(1).then((data) => {
+      getScreeningByID(screening).then((data) => {
       updateData(data);
       console.log("AA");
       console.log(data);
@@ -64,18 +64,17 @@ export default function Page() {
 
   function send(e: any) {
     e.preventDefault();
-    console.log(e);
-    console.log(reserved);
-    console.log(movieData);
-    let a = [];
-    console.log(a);
+    let conv : any = [];
+      reserved.forEach((e) => {
+          conv.push([e.x,e.y,e.selected ? 1 : 0]);
+      })
     if (movieData != undefined) {
       placeOrder(
         e.target.firstName.value,
         e.target.lastName.value,
         e.target.email.value,
         movieData?.id,
-        reserved
+        conv
       );
     }
     // "Name":"a",

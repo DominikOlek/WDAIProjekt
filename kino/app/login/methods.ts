@@ -61,7 +61,7 @@ let getAllScreenings = async (): Promise<Screening[]> => {
         seats: data[i].Places,
         id: data[i].ID,
         movie: {
-          img: "",
+          img: data[i].ImageSrc,
           title: data[i].Name,
           description: data[i].Describe,
           length: 100,
@@ -119,7 +119,7 @@ let placeOrder = async (
   ScreeningId: number,
   seats: any
 ) => {
-  let x = fetch(`http://${ip}:5000/show`, {
+    let x = fetch(`http://${ip}:5000/order/add`, {
     method: "POST",
     mode: "cors",
     headers: {
@@ -129,9 +129,9 @@ let placeOrder = async (
     },
     body: JSON.stringify({
       Name: firstName,
-      Lastname: lastName,
+      LastName: lastName,
       Email: email,
-      ScreeningID: ScreeningId,
+      ShowID: ScreeningId,
       Places: seats,
     }),
   })
@@ -139,8 +139,9 @@ let placeOrder = async (
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
-      return response.json();
+      return response.text();
     })
+    .then(data => console.log('Kod zamowienia: ', data.charAt(data.length - 1)))
     .catch((error) => {
       console.error("Error fetching data:", error);
     });

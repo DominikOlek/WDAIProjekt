@@ -21,7 +21,7 @@ export default function Home() {
 
   function generateMovieList() {
     return movieList.map((e: Screening) => {
-      return <MovieDisplay screening={e}></MovieDisplay>;
+        return <MovieDisplay screening={e} key={e.id}></MovieDisplay>;
     });
   }
   return <div>{generateMovieList()}</div>;

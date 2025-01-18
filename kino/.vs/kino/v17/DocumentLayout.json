@@ -1,0 +1,564 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\WDAI\\Projekt2\\kino\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\app\\reservation\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\reservation\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\app\\moviesList\\MovieDisplay.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\moviesList\\MovieDisplay.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\app\\moviesList\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\moviesList\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\app\\login\\methods.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\login\\methods.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\rooms\\addRoom.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\adminPanel\\rooms\\addRoom.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\app\\login\\Login.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\login\\Login.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\adminPanel\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\methods.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\adminPanel\\methods.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\users\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\adminPanel\\users\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\screenings\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\adminPanel\\screenings\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\screenings\\addScreening.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\adminPanel\\screenings\\addScreening.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\rooms\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\adminPanel\\rooms\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\movies\\addMovie.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\adminPanel\\movies\\addMovie.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\rooms\\seat.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\adminPanel\\rooms\\seat.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\app\\reservation\\Seat.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\reservation\\Seat.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\app\\reservation\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\reservation\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\app\\interfaces.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\interfaces.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\movies\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\adminPanel\\movies\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\app\\moviesList\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\moviesList\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\app\\layout.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\layout.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\app\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\eslint.config.mjs||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:eslint.config.mjs||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\next.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:next.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\WDAI\\Projekt2\\kino\\postcss.config.mjs||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:postcss.config.mjs||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 39,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:30:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:490213655:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1397882721:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:14:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:15:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:17:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:18:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:19:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:20:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:22:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:24:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:25:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:26:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:27:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:28:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:29:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:23:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:10:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:21:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "page.tsx",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\screenings\\page.tsx",
+              "RelativeDocumentMoniker": "app\\adminPanel\\screenings\\page.tsx",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\screenings\\page.tsx",
+              "RelativeToolTip": "app\\adminPanel\\screenings\\page.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-18T02:17:11.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "seat.tsx",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\rooms\\seat.tsx",
+              "RelativeDocumentMoniker": "app\\adminPanel\\rooms\\seat.tsx",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\rooms\\seat.tsx",
+              "RelativeToolTip": "app\\adminPanel\\rooms\\seat.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-18T00:44:20.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "page.tsx",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\rooms\\page.tsx",
+              "RelativeDocumentMoniker": "app\\adminPanel\\rooms\\page.tsx",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\rooms\\page.tsx",
+              "RelativeToolTip": "app\\adminPanel\\rooms\\page.tsx",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-18T00:40:19.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "style.css",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\app\\reservation\\style.css",
+              "RelativeDocumentMoniker": "app\\reservation\\style.css",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\app\\reservation\\style.css",
+              "RelativeToolTip": "app\\reservation\\style.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-17T23:58:16.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Seat.tsx",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\app\\reservation\\Seat.tsx",
+              "RelativeDocumentMoniker": "app\\reservation\\Seat.tsx",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\app\\reservation\\Seat.tsx",
+              "RelativeToolTip": "app\\reservation\\Seat.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-17T23:49:34.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "page.tsx",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\app\\reservation\\page.tsx",
+              "RelativeDocumentMoniker": "app\\reservation\\page.tsx",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\app\\reservation\\page.tsx",
+              "RelativeToolTip": "app\\reservation\\page.tsx",
+              "ViewState": "AgIAADUAAAAAAAAAAAAwwEgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-17T23:49:21.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "page.tsx",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\app\\moviesList\\page.tsx",
+              "RelativeDocumentMoniker": "app\\moviesList\\page.tsx",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\app\\moviesList\\page.tsx",
+              "RelativeToolTip": "app\\moviesList\\page.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-17T23:34:35.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.tsx",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\app\\login\\Login.tsx",
+              "RelativeDocumentMoniker": "app\\login\\Login.tsx",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\app\\login\\Login.tsx",
+              "RelativeToolTip": "app\\login\\Login.tsx",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-17T23:32:24.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "page.tsx",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\page.tsx",
+              "RelativeDocumentMoniker": "app\\adminPanel\\page.tsx",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\page.tsx",
+              "RelativeToolTip": "app\\adminPanel\\page.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-17T23:32:06.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "addMovie.tsx",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\movies\\addMovie.tsx",
+              "RelativeDocumentMoniker": "app\\adminPanel\\movies\\addMovie.tsx",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\movies\\addMovie.tsx",
+              "RelativeToolTip": "app\\adminPanel\\movies\\addMovie.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-17T23:25:29.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "addRoom.tsx",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\rooms\\addRoom.tsx",
+              "RelativeDocumentMoniker": "app\\adminPanel\\rooms\\addRoom.tsx",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\rooms\\addRoom.tsx",
+              "RelativeToolTip": "app\\adminPanel\\rooms\\addRoom.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-17T23:25:23.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MovieDisplay.tsx",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\app\\moviesList\\MovieDisplay.tsx",
+              "RelativeDocumentMoniker": "app\\moviesList\\MovieDisplay.tsx",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\app\\moviesList\\MovieDisplay.tsx",
+              "RelativeToolTip": "app\\moviesList\\MovieDisplay.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-17T23:22:41.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "page.tsx",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\users\\page.tsx",
+              "RelativeDocumentMoniker": "app\\adminPanel\\users\\page.tsx",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\users\\page.tsx",
+              "RelativeToolTip": "app\\adminPanel\\users\\page.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-17T23:32:02.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "methods.ts",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\methods.ts",
+              "RelativeDocumentMoniker": "app\\adminPanel\\methods.ts",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\methods.ts",
+              "RelativeToolTip": "app\\adminPanel\\methods.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-17T23:32:04.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "methods.ts",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\app\\login\\methods.ts",
+              "RelativeDocumentMoniker": "app\\login\\methods.ts",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\app\\login\\methods.ts",
+              "RelativeToolTip": "app\\login\\methods.ts",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAuwH4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-17T23:32:51.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "interfaces.tsx",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\app\\interfaces.tsx",
+              "RelativeDocumentMoniker": "app\\interfaces.tsx",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\app\\interfaces.tsx",
+              "RelativeToolTip": "app\\interfaces.tsx",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-17T23:20:13.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "page.tsx",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\movies\\page.tsx",
+              "RelativeDocumentMoniker": "app\\adminPanel\\movies\\page.tsx",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\movies\\page.tsx",
+              "RelativeToolTip": "app\\adminPanel\\movies\\page.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-17T23:34:47.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "style.css",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\app\\moviesList\\style.css",
+              "RelativeDocumentMoniker": "app\\moviesList\\style.css",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\app\\moviesList\\style.css",
+              "RelativeToolTip": "app\\moviesList\\style.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-18T00:37:09.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "addScreening.tsx",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\screenings\\addScreening.tsx",
+              "RelativeDocumentMoniker": "app\\adminPanel\\screenings\\addScreening.tsx",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\app\\adminPanel\\screenings\\addScreening.tsx",
+              "RelativeToolTip": "app\\adminPanel\\screenings\\addScreening.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-17T23:25:21.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "page.tsx",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\app\\page.tsx",
+              "RelativeDocumentMoniker": "app\\page.tsx",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\app\\page.tsx",
+              "RelativeToolTip": "app\\page.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-17T23:24:15.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "eslint.config.mjs",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\eslint.config.mjs",
+              "RelativeDocumentMoniker": "eslint.config.mjs",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\eslint.config.mjs",
+              "RelativeToolTip": "eslint.config.mjs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-17T23:24:58.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "next.config.ts",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\next.config.ts",
+              "RelativeDocumentMoniker": "next.config.ts",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\next.config.ts",
+              "RelativeToolTip": "next.config.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-17T23:24:57.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "postcss.config.mjs",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\postcss.config.mjs",
+              "RelativeDocumentMoniker": "postcss.config.mjs",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\postcss.config.mjs",
+              "RelativeToolTip": "postcss.config.mjs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-17T23:24:56.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "layout.tsx",
+              "DocumentMoniker": "D:\\WDAI\\Projekt2\\kino\\app\\layout.tsx",
+              "RelativeDocumentMoniker": "app\\layout.tsx",
+              "ToolTip": "D:\\WDAI\\Projekt2\\kino\\app\\layout.tsx",
+              "RelativeToolTip": "app\\layout.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-17T23:20:18.789Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -25,6 +25,7 @@ const AddInfoOne = async (e) => {
     e.dataValues.Director = info.Director;
     e.dataValues.AgeCategory = info.AgeCategory;
     e.dataValues.Length = info.Length;
+    e.dataValues.ImageSrc = info.ImageSrc;
     let lan = await Language.findOne({ where: { ID: e.LanguageID } });
     e.dataValues.LanguageName = lan.Name;
     lan = await Language.findOne({ where: { ID: e.SubtitlesID } });
@@ -89,7 +90,7 @@ const getOne = async (req, res) => {
 const addOne = async (req, res) => {
     try {
         const obj = req.body;
-        if (!obj.hasOwnProperty("Name") || !obj.hasOwnProperty("Describe") || !obj.hasOwnProperty("Languages") || !obj.hasOwnProperty("Subtitles") || !obj.hasOwnProperty("Director") || !obj.hasOwnProperty("CategoryID") || !obj.hasOwnProperty("AgeCategory") || !obj.hasOwnProperty("Length")) {
+        if (!obj.hasOwnProperty("Name") || !obj.hasOwnProperty("Describe") || !obj.hasOwnProperty("Languages") || !obj.hasOwnProperty("Subtitles") || !obj.hasOwnProperty("Director") || !obj.hasOwnProperty("CategoryID") || !obj.hasOwnProperty("AgeCategory") || !obj.hasOwnProperty("Length") || !obj.hasOwnProperty("ImageSrc")) {
             return res.status(400).send("Missing data");
         }
         if (obj.Length <= 0) {
