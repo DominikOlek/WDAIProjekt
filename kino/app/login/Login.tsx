@@ -1,5 +1,6 @@
 import { ip } from "../interfaces";
 import { getCookie } from "./methods";
+import "../style.css";
 
 export default function Login() {
   function login(e: any) {
@@ -32,8 +33,9 @@ export default function Login() {
 
   return (
     <form onSubmit={login}>
-      <input type="text" name="login"></input>
-      <input type="password" name="password"></input>
+      <h2>Logowanie</h2>
+      <input type="text" name="login" placeholder="login"></input>
+      <input type="password" name="password" placeholder="password"></input>
       <input type="submit"></input>
     </form>
   );

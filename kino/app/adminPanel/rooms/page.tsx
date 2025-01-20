@@ -1,10 +1,12 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { getData } from "../methods";
+import { deleteRoom, getData } from "../methods";
 import AddRoom from "./addRoom";
-
+import "../../style.css";
+import { useRouter } from "next/navigation";
 export default function rooms() {
+  let router = useRouter();
   let [roomList, update] = React.useState([]);
   useEffect(() => {
     getRooms();
@@ -17,7 +19,12 @@ export default function rooms() {
       update(data);
     });
   }
-  let del = (e: any) => {};
+  let del = (e: any) => {
+    console.log(e.target.value);
+    deleteRoom(`room/delete${e.target.value}`);
+    getRooms();
+    router.push("/adminPanel");
+  };
   return (
     <div>
       {roomList.map((e: any) => {

@@ -26,5 +26,5 @@ export interface Position {
   x: number;
   y: number;
 }
-let ip = "192.168.1.102";
+let ip = "10.129.7.146";
 export { ip };
