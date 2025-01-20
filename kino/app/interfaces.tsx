@@ -23,8 +23,8 @@ export interface Reserved {
 }
 
 export interface Position {
-    x: number;
-    y: number;
+  x: number;
+  y: number;
 }
-let ip = "192.168.0.5";
+let ip = "192.168.1.102";
 export { ip };

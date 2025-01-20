@@ -1,6 +1,8 @@
 "use client";
 import React, { useEffect } from "react";
 import Seat from "./Seat";
+import "../style.css";
+
 import "./style.css";
 import { Reserved, Screening } from "../interfaces";
 import { useSearchParams } from "next/navigation";
@@ -12,7 +14,7 @@ export default function Page() {
   const [reserved, reserveSeat] = React.useState<Reserved[]>([]);
   const [movieData, updateData] = React.useState<Screening>();
   useEffect(() => {
-      getScreeningByID(screening).then((data) => {
+    getScreeningByID(screening).then((data) => {
       updateData(data);
       console.log("AA");
       console.log(data);
@@ -63,11 +65,14 @@ export default function Page() {
   }
 
   function send(e: any) {
+    alert("ok");
+
     e.preventDefault();
-    let conv : any = [];
-      reserved.forEach((e) => {
-          conv.push([e.x,e.y,e.selected ? 1 : 0]);
-      })
+    let conv: any = [];
+    reserved.forEach((e) => {
+      conv.push([e.x, e.y, e.selected ? 1 : 0]);
+    });
+    console.log(conv);
     if (movieData != undefined) {
       placeOrder(
         e.target.firstName.value,
@@ -77,11 +82,6 @@ export default function Page() {
         conv
       );
     }
-    // "Name":"a",
-    // "LastName":"b",
-    // "Email":"A@gmail.com",
-    // "ShowID":1,
-    // "Places":[[0,2,1]]
   }
 
   return (

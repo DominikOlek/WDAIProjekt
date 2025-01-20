@@ -119,7 +119,7 @@ let placeOrder = async (
   ScreeningId: number,
   seats: any
 ) => {
-    let x = fetch(`http://${ip}:5000/order/add`, {
+  let x = fetch(`http://${ip}:5000/order/add`, {
     method: "POST",
     mode: "cors",
     headers: {
@@ -141,9 +141,10 @@ let placeOrder = async (
       }
       return response.text();
     })
-    .then(data => console.log('Kod zamowienia: ', data.charAt(data.length - 1)))
+    .then((data) => alert("Kod zamowienia: " + data.charAt(data.length - 1)))
     .catch((error) => {
       console.error("Error fetching data:", error);
+      alert("Error fetching data:" + error);
     });
 };
 let confirmUser = () => {

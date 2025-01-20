@@ -1,3 +1,9 @@
+import "./style.css";
 export default function Home() {
-  return <a href={"moviesList"}>{"movies"}</a>;
+  return (
+    <div>
+      <h1>Welcome to the cinema</h1>
+      <a href={"moviesList"}>{"movies"}</a>
+    </div>
+  );
 }
