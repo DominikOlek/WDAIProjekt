@@ -8,7 +8,10 @@ import { Reserved, Screening } from "../interfaces";
 import { useSearchParams } from "next/navigation";
 import { getScreeningByID, placeOrder } from "../login/methods";
 
+import { useRouter } from "next/navigation";
 export default function Page() {
+  const router = useRouter();
+
   const searchParams = useSearchParams();
   const screening = searchParams.get("title") | 0;
   const [reserved, reserveSeat] = React.useState<Reserved[]>([]);
@@ -20,11 +23,11 @@ export default function Page() {
       console.log(data);
     });
   }, []);
-  function generateSeats(n: number) {
+  function generateSeats(n: number, a: number) {
     let tab = [];
 
     for (let i = 0; i < n; i++) {
-      tab.push(generateRow(n, i));
+      tab.push(generateRow(a, i));
     }
     return tab;
   }
@@ -43,9 +46,13 @@ export default function Page() {
     let tab = [];
     for (let i = 0; i < n; i++) {
       let occupied = false;
+      let exists = true;
       if (movieData != undefined) {
         if (movieData.seats[a][i] == 1) {
           occupied = true;
+        }
+        if (movieData.seats[a][i] == -1) {
+          exists = false;
         }
       }
       // let ok: boolean = movieData.seats[a][i];
@@ -57,6 +64,7 @@ export default function Page() {
           occupied={occupied}
           position={{ x: a, y: i }}
           reserve={reserve}
+          exists={exists}
         />
       );
     }
@@ -81,12 +89,15 @@ export default function Page() {
         movieData?.id,
         conv
       );
+      router.push(`/moviesList`);
     }
   }
 
   return (
     <div>
-      {movieData == undefined ? "" : generateSeats(movieData.seats.length)}
+      {movieData == undefined
+        ? ""
+        : generateSeats(movieData.seats.length, movieData.seats[0].length)}
       <div></div>
       <form onSubmit={send}>
         <label>Złóż zamówienie</label>

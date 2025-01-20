@@ -27,13 +27,13 @@ const addOne = async (req, res) => {
     obj.Price = 0;
     for (const e of obj.Places) {
       console.log(e);
+      console.log(show.Places);
       if (show.Places.length < e[0] || show.Places[e[0]].length < e[1]) {
         console.log("Wrong Places data1");
         return res.status(406).send("Wrong Places data1");
       }
       if (show.Places[e[0]][e[1]] != 0) {
-        console.log("Wrong Places data2");
-
+        console.log("Places already taken");
         return res.status(406).send("Places already taken");
       }
       if (show.Places[e[0]][e[1]] < 0) {

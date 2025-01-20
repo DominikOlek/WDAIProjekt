@@ -1,4 +1,5 @@
 import { ip, Reserved, Screening } from "../interfaces";
+import { redirect } from "next/navigation";
 
 export function getCookie(name: string) {
   const value = `; ${document.cookie}`;
@@ -141,7 +142,13 @@ let placeOrder = async (
       }
       return response.text();
     })
-    .then((data) => alert("Kod zamowienia: " + data.charAt(data.length - 1)))
+    .then((data) => {
+      alert(
+        "Kod zamowienia: " +
+          data.charAt(data.length - 1) +
+          "\nBilety wysłano na podany adress email"
+      );
+    })
     .catch((error) => {
       console.error("Error fetching data:", error);
       alert("Error fetching data:" + error);

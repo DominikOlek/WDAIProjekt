@@ -8,6 +8,7 @@ export default function Seat(props: {
   reserve: Function;
   id: number;
   occupied: boolean;
+  exists: boolean;
 }) {
   const [selected, select] = React.useState(props.selected);
   function click() {
@@ -22,13 +23,17 @@ export default function Seat(props: {
       select((e) => !e);
     }
   }
-  return !props.occupied ? (
-    selected ? (
-      <div className="seatSelected" onClick={click}></div>
+  return props.exists ? (
+    !props.occupied ? (
+      selected ? (
+        <div className="seatSelected" onClick={click}></div>
+      ) : (
+        <div className="seat" onClick={click}></div>
+      )
     ) : (
-      <div className="seat" onClick={click}></div>
+      <div className="occupied"></div>
     )
   ) : (
-    <div className="occupied"></div>
+    <div className="noPlace"></div>
   );
 }
